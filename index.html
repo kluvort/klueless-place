@@ -14,11 +14,7 @@
 </head>
  
 <style>
-body {
-    background: linear-gradient(to top,  lightblue, grey, lightgreen);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
+
 </style>
 
 </head>
@@ -34,7 +30,8 @@ body {
     
            </div>
            <nav>
-            <ul>
+            <ul id="MenuItems">
+               
                 <li><a href="">Home</a></li>
                 <li><a href="">Products</a></li>
                 <li><a href="">About</a></li>
@@ -42,6 +39,8 @@ body {
                 <li><a href="">Account</a></li>
             </ul>
             <img src="images/glass.png" width="30px" height="30px" >
+            <img src="images/poison.png" class="menu-icon" 
+            onclick="menutoggle()">
            </nav>
         </div>
         <div class="row">
@@ -157,14 +156,154 @@ body {
                         <p>$10</p>
                   </div>
       </div>
-       
-
 
 
    </div>
 
+<!----------------Offer-------------->
+<div class="offer">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-2">
+<img src="Images/munchen.jpg" class="offer-img">
+            </div>
+                <div class="col-2">
+                <p> Exclusively Available on Luminescence</p>
+                <h1>Quantum Luminescence Elixir Special</h1>
+                <small> The only special ever elixir made in the whole world it's in sell don't forget to buy!</small><br>
+                <a href="" class="btn">Buy Now! &#8594;</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------- testimonial ----------->
+<div class="testimonial">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est officia rerum,<br>
+                    amet libero fuga in voluptas nostrum dolorum odit repellat maxime unde, 
+                    <br>ducimus labore laborum facere reprehenderit fugit voluptates? Odio.</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+           </div>
+           <img src="images/Sauli_Niinisto.jpg">
+           <h3>Sauli Niinistö</h3>
+        </div>
+        <div class="col-3">
+            <i class="fa fa-quote-left"></i>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est officia rerum,<br>
+                amet libero fuga in voluptas nostrum dolorum odit repellat maxime unde, 
+                <br>ducimus labore laborum facere reprehenderit fugit voluptates? Odio.</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+       </div>
+       <img src="images/tarjaha.jpg">
+       <h3>Tarja Halonen</h3>
+    </div>
+    <div class="col-3">
+        <i class="fa fa-quote-left"></i>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est officia rerum,<br>
+            amet libero fuga in voluptas nostrum dolorum odit repellat maxime unde, 
+            <br>ducimus labore laborum facere reprehenderit fugit voluptates? Odio.</p>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+   </div>
+   <img src="images/mannerheim2.jpg">
+   <h3>Carl Gustaf Emil Mannerheim</h3>
+</div>
+    </div>
+</div>
 
+<!--------- brands --------->
+<div class="brands">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-5">
+                <img src="Images/love.png">
+            </div>
+            <div class="col-5">
+                <img src="Images/love.png">
+            </div>
+            <div class="col-5">
+                <img src="Images/love.png">
+            </div>
+            <div class="col-5">
+                <img src="Images/love.png">
+            </div>
+            <div class="col-5">
+                <img src="Images/love.png">
+            </div>
+        </div>
+    </div>
+</div>
 
+<!--------- footer --------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3> Pleaseeee do somethingg</h3>
+                <p>Broooooo shushhhh</p>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/munchen.jpg">
+                <p>Cooooooooool</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Stuff</h3>
+                <ul>
+                    <li>Codes</li>
+                    <li>Feedback</li>
+                    <li>FAQ</li>
+                    <li>Join</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Social</h3>
+                <ul>
+                    <li>IG</li>
+                    <li>X</li>
+                    <li>TT</li>
+                    <li>Cord</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="Copyright"> Copyright 2020 - Idk</p>
+    </div>
+</div>
+
+<!-----------js for toggle menu----->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+       if (MenuItems.style.maxHeight == "0px")
+       {
+        MenuItems.style.maxHeight = "200px";
+       }
+       else
+        {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
 </body>
 
 </html>
